@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFA6BD;
+    cursor: url('heart.svg'), auto; 
+    overflow: hidden; 
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    height: 100vh;
+    text-align: center;
+}
+
+.dialogue-panel {
+    position: absolute;
+    width: 826.76px;
+    height: 183.76px;
+    left: 50%; 
+    top: 85%; 
+    transform: translate(-50%, -50%); 
+    box-sizing: border-box;
+    border: 2.4px solid rgba(255, 255, 255, 0.15);
+    border-radius: 47.98px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28.79px);
+    background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.14) -4.248%, rgba(255, 255, 255, 0) 107.843%);
+    padding: 15px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    visibility: hidden; 
+}
+
+.dialogue-panel.show {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.character-name {
+    font-weight: bold; 
+    margin: 0;
+    color: #ae86a9; 
+}
+
+#thought-text {
+    font-weight: bold; 
+    color: #ae86a9; 
+}
+
+#question-text {
+    font-weight: bold; 
+    color: #ae86a9; 
+}
+  
+.character {
+    position: absolute;
+    bottom: -119px; 
+    left: 100%; 
+    transform: translateX(-50%);
+    width: 537px; 
+    height: 778px; 
+    transition: all 1s ease-in-out;
+    pointer-events: none;
+}
+
+.glass-button, .glass-button2 {
+    box-sizing: border-box;
+    border: 2.4px solid rgba(255, 255, 255, 0.15);
+    border-radius: 47.98px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28.79px);
+    background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.14) -4.248%, rgba(255, 255, 255, 0) 107.843%);
+    color: #ae86a9; 
+    font-weight: bold; 
+    padding: 20px 40px; 
+    margin: 10px; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s, box-shadow 0.3s; 
+    font-size: 20px; 
+}
+
+.glass-button:hover, .glass-button2:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.05); 
+}
+
+.glass-button.show, .glass-button2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#question-text2 {
+    font-weight: bold;
+    color: #ae86a9;
+    margin-bottom: 20px;
+  }
+  
+  .glass-button2 {
+    box-sizing: border-box;
+    border: 2.4px solid rgba(255, 255, 255, 0.15);
+    border-radius: 47.98px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28.79px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.14) -4%, rgba(255, 255, 255, 0) 107.843%);
+    color: #ae86a9;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 20px;
+    width: 250px;
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  .glass-button2:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  .glass-button2.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  #day-question2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center;
+  }
+
+#day-question {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}
+
+
+.container > * {
+    transition: opacity 1s ease;
+}
+
+
+.glass-button {
+    box-sizing: border-box;
+    border: 2.4px solid rgba(255, 255, 255, 0.15);
+    border-radius: 47.98px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28.79px);
+    background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.14) -4.248%, rgba(255, 255, 255, 0) 107.843%);
+    color: #ae86a9;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 10px;
+    cursor: pointer;
+    transition: opacity 1s ease, transform 0.3s ease;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.glass-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}

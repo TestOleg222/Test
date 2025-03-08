@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="heart.svg" type="image/svg+xml">
+    <title>8 Марта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <audio id="bgMusic" src="sounds/bg_music.mp3" preload="auto" autoplay loop></audio>
+    <audio id="clickSound" src="sounds/click.mp3" preload="auto"></audio>
+    
+    <div class="container">
+        <div class="dialogue-panel" id="dialogue-panel">
+            <p class="character-name">Пигги</p>
+            <p id="thought-text"></p>
+        </div>
+        <img src="images/closed mouth.png" alt="Персонаж" class="character" id="character">
+        
+        
+        <div id="day-question" style="display: none; text-align: center;">
+            <p id="question-text">Как твой день?</p>
+            <button class="glass-button" id="good-button">Хорошо</button>
+            <button class="glass-button" id="okay-button">Сойдет</button>
+            <button class="glass-button" id="bad-button">Плохо</button>
+        </div>
+
+        
+        <div id="day-question2" style="display: none; text-align: center;">
+            <p id="question-text2">А какие наряды тебе нравятся?</p>
+            <button class="glass-button2" id="open-button">Открытые</button>
+            <button class="glass-button2" id="closed-button">Закрытые</button>
+            <button class="glass-button2" id="no-preference-button">Без разницы</button>
+        </div>
+
+        
+        <div id="achievement-question" style="display: none; text-align: center;">
+            <p id="question-text3">Что лучше добиваться или сдаваться?</p>
+            <button class="glass-button2" id="achieve-button">Добиваться</button>
+            <button class="glass-button2" id="give-up-button">Сдаваться</button>
+        </div>
+
+        
+        <div id="maturity-question" style="display: none; text-align: center;">
+            <p id="question-text4">Вы считаете себя зрелой?</p>
+            <button class="glass-button2" id="mature-yes">Да</button>
+            <button class="glass-button2" id="mature-doubt">Я сомневаюсь в себе и своих решениях, мне трудно принять обиду и я не готова на что-то серьезное</button>
+            <button class="glass-button2" id="mature-no">Нет, я не зрелая и я не готова на высокую ответственность, свои эмоции и трудности</button>
+            <button class="glass-button2" id="mature-support">Я готова но при должной поддержке</button>
+        </div>
+
+        
+        <div id="belief-question" style="display: none; text-align: center;">
+            <p id="question-text5">Веришь в того кого любишь?</p>
+            <button class="glass-button2" id="belief-yes">Да</button>
+            <button class="glass-button2" id="belief-no">Нет</button>
+            <button class="glass-button2" id="belief-unsure">Не знаю</button>
+        </div>
+
+        
+        <div id="personality-question" style="display: none; text-align: center;">
+            <p id="question-text6">Что вам ближе?</p>
+            <button class="glass-button2" id="personality-emotional">Я эмоциональная, импульсивная, нервная, для меня даже не совсем значимые вещи в плане ценности имеют более большую ценность чем может показаться</button>
+            <button class="glass-button2" id="personality-careless">Мне абсолютно всё равно, я живу по течению и по воле случая, я эмоциональная</button>
+            <button class="glass-button2" id="personality-none">Ничего из этого</button>
+        </div>
+
+        
+        <div id="problems-question" style="display: none; text-align: center;">
+            <p id="question-text7">Разделять чужие проблемы это больше:</p>
+            <button class="glass-button2" id="problems-stress">Переживать неоправданный стресс</button>
+            <button class="glass-button2" id="problems-overcome">Стремиться преодолевать трудности несмотря на обиды и печали</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

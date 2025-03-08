@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта</title>
+    <link rel="stylesheet" href="css.page_two.css">
+</head>
+<body>
+    <audio id="bgMusic" src="../sounds/bg_music.mp3" preload="auto" autoplay loop></audio>
+    <audio id="clickSound" src="../sounds/marca.mp3" preload="auto"></audio>
+
+    <div class="gradient-container"></div>
+    <div class="question-container" id="question-1">
+        <div class="question-title">Вы чувствуете себя одинокой?</div>
+        <div class="answer-option" onclick="selectOption(0, 1)">
+            <div class="checkbox" id="checkbox-1-0"></div>
+            <div class="answer-text">Частично</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 1)">
+            <div class="checkbox" id="checkbox-1-1"></div>
+            <div class="answer-text">Нет, у меня есть человек</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(1)">Далее</button>
+    </div>
+
+    <div class="question-container" id="question-2" style="display: none;">
+        <div class="question-title">Что лучше добиваться или сдаваться?</div>
+        <div class="answer-option" onclick="selectOption(0, 2)">
+            <div class="checkbox" id="checkbox-2-0"></div>
+            <div class="answer-text">Добиваться</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 2)">
+            <div class="checkbox" id="checkbox-2-1"></div>
+            <div class="answer-text">Сдаваться</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(2)">Далее</button>
+    </div>
+
+    <div class="question-container" id="question-3" style="display: none;">
+        <div class="question-title">Вы считаете себя зрелой?</div>
+        <div class="answer-option" onclick="selectOption(0, 3)">
+            <div class="checkbox" id="checkbox-3-0"></div>
+            <div class="answer-text">Да</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 3)">
+            <div class="checkbox" id="checkbox-3-1"></div>
+            <div class="answer-text">Я сомневаюсь в себе и своих решениях, мне трудно принять обиду и я не готова на что-то серьезное</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(2, 3)">
+            <div class="checkbox" id="checkbox-3-2"></div>
+            <div class="answer-text">Нет, я не зрелая и я не готова на высокую ответственность, свои эмоции и трудности</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(3, 3)">
+            <div class="checkbox" id="checkbox-3-3"></div>
+            <div class="answer-text">Я готова но при должной поддержке</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(3)">Далее</button>
+    </div>
+
+    <div class="question-container" id="question-4" style="display: none;">
+        <div class="question-title">Веришь в того кого любишь?</div>
+        <div class="answer-option" onclick="selectOption(0, 4)">
+            <div class="checkbox" id="checkbox-4-0"></div>
+            <div class="answer-text">Да</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 4)">
+            <div class="checkbox" id="checkbox-4-1"></div>
+            <div class="answer-text">Нет</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(2, 4)">
+            <div class="checkbox" id="checkbox-4-2"></div>
+            <div class="answer-text">Не знаю</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(4)">Далее</button>
+    </div>
+
+    <div class="question-container" id="question-5" style="display: none;">
+        <div class="question-title">Что вам ближе?</div>
+        <div class="answer-option" onclick="selectOption(0, 5)">
+            <div class="checkbox" id="checkbox-5-0"></div>
+            <div class="answer-text">Я эмоциональная, импульсивная, нервная, для меня даже не совсем значимые вещи в плане ценности имеют более большую ценность чем может показаться</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 5)">
+            <div class="checkbox" id="checkbox-5-1"></div>
+            <div class="answer-text">Мне абсолютно всё равно, я живу по течению и по воле случая, я эмоциональная</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(2, 5)">
+            <div class="checkbox" id="checkbox-5-2"></div>
+            <div class="answer-text">Ничего из этого</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(5)">Далее</button>
+    </div>
+
+    <div class="question-container" id="question-6" style="display: none;">
+        <div class="question-title">Разделять чужие проблемы это больше:</div>
+        <div class="answer-option" onclick="selectOption(0, 6)">
+            <div class="checkbox" id="checkbox-6-0"></div>
+            <div class="answer-text">Переживать неоправданный стресс</div>
+        </div>
+        <div class="answer-option" onclick="selectOption(1, 6)">
+            <div class="checkbox" id="checkbox-6-1"></div>
+            <div class="answer-text">Стремиться преодолевать трудности несмотря на обиды и печали</div>
+        </div>
+        <button class="next-button" onclick="nextQuestion(6)">Пока?</button>
+    </div>
+
+    <script src="script_page_two.js"></script>
+</body>
+</html>

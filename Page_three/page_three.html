@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта</title>
+    <link rel="stylesheet" href="style_three.css">
+</head>
+<body>
+    <audio id="bgMusic" src="../sounds/bg_music.mp3" preload="auto" autoplay loop></audio>
+    <audio id="paperSound" src="../sounds/papel.mp3" preload="auto"></audio>
+    <audio id="chestSound" src="../sounds/chest.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <img src="../images/pngtree-white.png" alt="Письмо 1" class="letter" id="letter1">
+        <img src="../images/pngtree-white.png" alt="Письмо 2" class="letter" id="letter2">
+        <img src="../images/ring_box.png" alt="Кольцо" class="ring" id="ring">
+    </div>
+
+    
+    <div class="modal" id="letterModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="letterText"></p>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="ringModal">
+        <div class="modal-content">
+            <h2>Решаешь?</h2>
+            <div class="button-container">
+                <button class="answer-btn" id="yesBtn">Да</button>
+                <button class="answer-btn" id="noBtn">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_three.js"></script>
+</body>
+</html>
